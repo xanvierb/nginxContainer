@@ -1,0 +1,14 @@
+<a ui-sref="newMovie" class="btn-primary btn-lg nodecoration" style="float:right">+</a>
+<table class="table movietable">
+    <tr>
+        <td><h3>Addresses</h3></td>
+        <td></td>
+    </tr>
+    <tr ng-repeat="movie in movies">
+        <td>{{movie.firstName}} {{movie.lastName}} ({{movie.email}})</td>
+        <td>
+            <a class="btn btn-primary" ui-sref="viewMovie({id:movie.mobilePhone})">View</a>
+            <a class="btn btn-danger"  ng-click="deleteMovie(movie)">Delete</a>
+        </td>
+    </tr>
+</table>

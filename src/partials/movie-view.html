@@ -1,0 +1,45 @@
+<table class="table movietable">
+    <tr>
+        <td><h3>Details for {{movie.firstName}}</h3></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>First name</td>
+        <td>{{movie.firstName}}</td>
+    </tr>
+    <tr>
+        <td>Last name</td>
+        <td>{{movie.lastName}}</td>
+    </tr>
+    <tr>
+        <td>Family member</td>
+        <td>{{movie.isFamilyMember}}</td>
+    </tr>
+    <tr>
+        <td>Company</td>
+        <td>{{movie.company}}</td>
+    </tr>
+    <tr>
+        <td>Job Title</td>
+        <td>{{movie.jobTitle}}</td>
+    </tr>
+    <tr>
+        <td>E-mail</td>
+        <td>{{movie.email}}</td>
+    </tr>
+    <tr>
+        <td>Mobile Phone</td>
+        <td>{{movie.mobilePhone}}</td>
+    </tr>
+    <tr>
+        <td>Date of birth</td>
+        <td>{{movie.dateOfBirth}}</td>
+    </tr>
+    <tr>
+        <td>Anniversary date</td>
+        <td>{{movie.anniversaryDate}}</td>
+    </tr>
+</table>
+<div>
+    <a class="btn btn-primary" ui-sref="editMovie({id:movie.mobilePhone})">Edit</a>
+</div>
